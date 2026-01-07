@@ -120,9 +120,10 @@
 // About Section CTA
 .about-cta {
   margin-top: $space-8;
+  margin-bottom: $space-12;
   
   @media (max-width: $breakpoint-md) {
-    margin-bottom: $space-8;
+    margin-bottom: $space-10;
   }
   
   .btn {
