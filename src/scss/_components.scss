@@ -35,6 +35,9 @@ nav {
   }
 
   .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
     color: $text-primary;
@@ -42,11 +45,40 @@ nav {
     position: relative;
     transition: all $transition-base $ease-out;
     
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      animation: hexRotate 20s linear infinite;
+      
+      polygon {
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: all 0.4s $ease-smooth;
+      }
+      
+      .hex-outer {
+        stroke: $primary-color;
+      }
+      
+      .hex-mid {
+        stroke: $primary-color;
+        opacity: 0.7;
+      }
+      
+      .hex-inner {
+        stroke: $accent-color;
+        opacity: 0.5;
+      }
+    }
+    
     &::after {
       content: '';
       position: absolute;
       bottom: -4px;
-      left: 0;
+      left: 44px;
       width: 0;
       height: 2px;
       background: linear-gradient(90deg, $primary-color, $secondary-color);
@@ -57,9 +89,37 @@ nav {
       color: $primary-color;
       transform: translateY(-2px);
       
-      &::after {
-        width: 100%;
+      .logo-icon {
+        animation-play-state: paused;
+        
+        .hex-outer {
+          stroke: $accent-color;
+          stroke-width: 3;
+        }
+        
+        .hex-mid {
+          stroke: $secondary-color;
+          opacity: 1;
+        }
+        
+        .hex-inner {
+          stroke: $primary-light;
+          opacity: 1;
+        }
       }
+      
+      &::after {
+        width: calc(100% - 44px);
+      }
+    }
+  }
+  
+  @keyframes hexRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
 
