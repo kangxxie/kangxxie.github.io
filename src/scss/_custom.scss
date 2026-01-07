@@ -121,6 +121,10 @@
 .about-cta {
   margin-top: $space-8;
   
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $space-8;
+  }
+  
   .btn {
     display: inline-flex;
     align-items: center;
