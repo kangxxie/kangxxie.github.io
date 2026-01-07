@@ -1,0 +1,234 @@
+// ============================================
+// BASE STYLES
+// ============================================
+@use 'sass:color';
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// CSS Reset
+// --------------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  color: $text-primary;
+  background-color: $bg-primary;
+  overflow-x: hidden;
+}
+
+// Typography
+// --------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  @include heading;
+  margin-bottom: $space-4;
+}
+
+h1 {
+  font-size: $font-size-5xl;
+  
+  @include md {
+    font-size: $font-size-6xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-4xl;
+  
+  @include md {
+    font-size: $font-size-5xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-3xl;
+  
+  @include md {
+    font-size: $font-size-4xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-2xl;
+  
+  @include md {
+    font-size: $font-size-3xl;
+  }
+}
+
+h5 {
+  font-size: $font-size-xl;
+  
+  @include md {
+    font-size: $font-size-2xl;
+  }
+}
+
+h6 {
+  font-size: $font-size-lg;
+  
+  @include md {
+    font-size: $font-size-xl;
+  }
+}
+
+p {
+  margin-bottom: $space-4;
+  color: $text-secondary;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $transition-base $ease-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+
+  @include focus-visible;
+}
+
+strong {
+  font-weight: $font-weight-semibold;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font-family: $font-mono;
+  font-size: 0.9em;
+  padding: $space-1 $space-2;
+  background-color: $bg-secondary;
+  border-radius: $border-radius-sm;
+}
+
+pre {
+  font-family: $font-mono;
+  padding: $space-4;
+  background-color: $bg-secondary;
+  border-radius: $border-radius-md;
+  overflow-x: auto;
+  margin-bottom: $space-4;
+
+  code {
+    padding: 0;
+    background: none;
+  }
+}
+
+// Lists
+// --------------------------------------------
+ul, ol {
+  margin-bottom: $space-4;
+  padding-left: $space-6;
+
+  li {
+    margin-bottom: $space-2;
+  }
+}
+
+// Images
+// --------------------------------------------
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Forms
+// --------------------------------------------
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: $space-3 $space-4;
+  border: $border-width solid color.adjust($text-secondary, $lightness: 30%);
+  border-radius: $border-radius-md;
+  background-color: $bg-primary;
+  color: $text-primary;
+  transition: border-color $transition-base $ease-out;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+
+  &::placeholder {
+    color: $text-light;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Utilities
+// --------------------------------------------
+.container {
+  @include container;
+}
+
+.section {
+  padding: $section-padding 0;
+
+  @include md {
+    padding: $space-24 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gradient {
+  @include text-gradient(linear-gradient(135deg, $primary-color, $secondary-color));
+}
+
+// Selection
+// --------------------------------------------
+::selection {
+  background-color: $primary-color;
+  color: white;
+}
+
+// Reduced motion
+// --------------------------------------------
+@include reduced-motion {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

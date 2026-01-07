@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Projects Portfolio - Hiba's Work Showcase" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <title>Projects - Hiba</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="/" class="logo">Hiba.dev</a>
+        
+        <div class="nav-menu">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/experience.html">Experience</a>
+          <a href="/projects.html" class="active">Projects</a>
+          <a href="/#contact">Contact</a>
+        </div>
+
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-content">
+          <span class="page-label" data-aos="fade-down">My Work</span>
+          <h1 data-aos="fade-up" data-aos-delay="100">Featured Projects</h1>
+          <p data-aos="fade-up" data-aos-delay="200">
+            A selection of projects I've built and designed
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter -->
+    <section class="section projects-filter">
+      <div class="container">
+        <div class="filter-buttons" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-showcase">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Project 1 - Portfolio -->
+          <article class="project-item" data-category="design" data-aos="fade-up">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/Portfolio (2).png" alt="Hiba.dev Portfolio">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="/" class="project-link" aria-label="View Live">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round"/>
+                      <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round"/>
+                      <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/kangxxie/kangxxie.github.io" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--progress">Completed</span>
+              <h3>Hiba.dev</h3>
+              <p>Modern, responsive portfolio website showcasing my work and skills... the site you're currently browsing!</p>
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>SCSS</span>
+                <span>GSAP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 - Whispra -->
+          <article class="project-item" data-category="software" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/Whispra.png" alt="Whispra Social App">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/kangxxie/Whispra" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--progress">In Progress</span>
+              <h3>Whispra</h3>
+              <p>A cross-platform social media application combining posts, communities, and real-time messaging in a seamless experience for web, mobile, and desktop.</p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Tauri</span>
+                <span>ASP.NET Core</span>
+                <span>SignalR</span>
+                <span>C#</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 - DONACTION -->
+          <article class="project-item" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/Donaction.png" alt="DONACTION Platform">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/kangxxie/Donaction" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--completed">Completed</span>
+              <h3>DONACTION</h3>
+              <p>Platform for managing and organizing fundraising campaigns, allowing users to create, track, and support donation initiatives with an intuitive interface.</p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 - WCLN -->
+          <article class="project-item" data-category="fullstack" data-aos="fade-up">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/WCLN.png" alt="WCLN Radar System">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/kangxxie/WCLN" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--completed">Completed</span>
+              <h3>WCLN - BCs Thesis Project</h3>
+              <p>Real-time radar system for counting and tracking targets with visual range-doppler analysis. Developed as my Bachelor's thesis project focusing on CNN-based inference and data visualization.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>TensorFlow Lite</span>
+                <span>RabbitMQ</span>
+                <span>Angular</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 - EZShop -->
+          <article class="project-item" data-category="fullstack design" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/EZShop.png" alt="EZShop Retail Management">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/kangxxie/EZShop" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--progress">In Progress</span>
+              <h3>EZShop</h3>
+              <p>A comprehensive retail management system designed to handle end-to-end operations for small to medium-sized shops, including inventory, sales tracking, and customer management with UI prototype.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 - ParkEASE -->
+          <article class="project-item" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-thumbnail">
+              <img src="src/assets/images/Parkease.png" alt="ParkEASE System">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/kangxxie/ParkEASE_FE" class="project-link" aria-label="View Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-status project-status--completed">Completed</span>
+              <h3>ParkEASE</h3>
+              <p>Web application that allows users to find and book parking spots online, managing reservations and availability in real-time for hassle-free parking.</p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>TypeScript</span>
+                <span>SpringBoot</span>
+                <span>Java</span>
+                <span>SQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2>Have a project in mind?</h2>
+          <p>Let's work together to bring your ideas to life.</p>
+          <div class="cta-actions">
+            <a href="/#contact" class="btn btn--primary">Start a Project</a>
+            <a href="/experience.html" class="btn btn--outline-light">View My Skills</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="/" class="footer-logo">
+              <span class="logo-bracket">&lt;</span>
+              Hiba.dev
+              <span class="logo-bracket">/&gt;</span>
+            </a>
+            <p class="footer-tagline">Crafting digital experiences</p>
+          </div>
+          
+          <div class="footer-social">
+            <p class="social-label">Let's Connect</p>
+            <div class="social-links">
+              <a href="https://github.com/kangxxie" target="_blank" aria-label="GitHub" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/hiba-boukayoud" target="_blank" aria-label="LinkedIn" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://t.me/nooralea" target="_blank" aria-label="Telegram" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.14.121.098.155.23.171.324.016.094.036.308.02.475z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2026 Hiba</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/ts/main.ts"></script>
+    <script>
+      // Simple filter functionality
+      document.addEventListener('DOMContentLoaded', () => {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            // Update active button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            // Filter projects
+            projects.forEach(project => {
+              if (filter === 'all' || project.getAttribute('data-category').includes(filter)) {
+                project.style.display = 'block';
+              } else {
+                project.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
